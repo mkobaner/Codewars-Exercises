@@ -1,4 +1,4 @@
-// This page has solutions for exercises for https://github.com/thejsway/thejsway/blob/master/manuscript/chapter06.md
+// This page has solutions for exercises at https://github.com/thejsway/thejsway/blob/master/manuscript/chapter06.md
 
 // first exercise with object
 // const r = Number(prompt("Enter the circle radius:"));
