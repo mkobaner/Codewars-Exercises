@@ -94,3 +94,89 @@ function playGameXTimes(arr){
 }
 
 playGameXTimes(['rock','paper','paper','scissors','scissors'])
+
+
+//space review
+
+//Arrays
+
+//Create an array of numbers. Sum all of the numbers. Alert the sum.
+
+let numbers=[23,32,34,11,31,67,32];
+
+// let total=0;
+// numbers.forEach((num)=>{
+//     total=total+num;
+// })
+
+// alert(total);
+
+
+//Create a function that takes in an array of numbers
+//Return a new array of numbers that is every original number squared
+
+const map1= numbers.map(x=>x*x);
+
+console.log(map1)
+
+//Create a function that takes string
+//Print the reverse of that string to the console
+
+function revString(str){
+    console.log(str.split('').reverse().join(''));
+}
+
+revString('mahmut');
+
+//Create a function that takes in a string
+//Alert if the string is a palindrome or not
+
+function checkPal(str){
+    if(str===str.split('').reverse().join('')){
+        alert('Palindrome')
+    } else { alert('Not a palindrome')}
+}
+checkPal('AnastasmumsatsanA');
+
+
+//Create a car object that has four properties and three methods
+let car = {
+    make:'Egea',
+    year:'2017',
+    shift:'Automatic',
+    engine:'Diesel',
+    horn:function(){
+    alert('honk honk')        
+    },
+    openDoors:function(){
+    alert('Doors Unlocked')
+    },
+    openTrucks:function(){
+        alert('Trunk Opened')
+    },
+
+}
+
+
+//Create a street fighter constructor that makes fighting game characters with 4 properties and 3 methods
+
+
+
+function Makefighter(fName,fStrenght,fAgility,fEndurance){
+    this.name= fName;
+    this.strenght=fStrenght;
+    this.agility=fAgility;
+    this.endurance=fEndurance;
+    this.punch=function(){
+        alert(`Other fighter lost ${this.strenght} endurance`)
+    }
+    this.kick=function(){
+        alert(`Other fighter lost ${this.strenght*2} endurance`)
+    }
+    this.avoid=function(){
+        alert(`you have %${this.agility} chance to avoid damage`)
+    }
+
+}
+
+let ryu = new Makefighter('Ryu','20','15','30')
