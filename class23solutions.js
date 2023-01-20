@@ -65,3 +65,52 @@ function mulGames(arr){
 mulGames(['rock','rock','rock','paper','paper','paper','scissors','scissors','scissors'])
 
 
+//Arrays
+
+//Create and array of numbers. Sum all of the numbers. Alert the sum.
+
+let numbers = new Array();
+
+numbers=[1,3,5,8,11,36];
+let total=0;
+numbers.forEach(element => {
+    total=total+element;
+});
+
+alert(total);
+
+console.log(squared(numbers))
+
+
+//Create a function that takes in an array of numbers
+//Return a new array of numbers that is every original number squared
+
+function squared (arr){
+const mapped=arr.map(element=> element*element);
+return mapped;
+}
+
+console.log(squared(numbers))
+
+//Create a function that takes string
+//Print the reverse of that string to the console
+
+
+function reverseIt(abc){
+    console.log(abc.split('').reverse().join(''));
+}
+
+reverseIt('Torakkuzu');
+//Create a function that takes in a string
+//Alert if the string is a palindrome or not
+
+
+
+function palindrome(bcd){
+    if (bcd.split('').reverse().join('')===bcd){
+        alert('Thats Palindrome')
+    } else { alert ('not a palindrom')}
+}
+
+palindrome('anastas mum satsana');
+
