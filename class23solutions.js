@@ -114,3 +114,29 @@ function palindrome(bcd){
 
 palindrome('anastas mum satsana');
 
+//Create a dog object that has four properties and three methods
+
+
+let dog ={
+    breed:'terrier',
+    name:'fino',
+    barks:true,
+    number_of_shots: 5,
+    wigTail:function(b=3){
+        console.log(`wigs tail ${b} times`)
+    },
+    bark(){
+        alert('WOOF')
+    },
+
+    attack(biteloc){
+        console.log(`${this.name} bit ${biteloc}, wild animal!!!`)
+    }
+
+
+}
+
+dog.attack('arm');
+
+//name(fido) and bark are in leons code :)
+
