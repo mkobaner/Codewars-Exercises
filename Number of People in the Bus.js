@@ -19,10 +19,13 @@ var number = function(busStops){
     total will assigned 0 at beginning and will change after every iteration */
 
     let total=0;
+    let count=0;
     busStops.forEach(element => {
-        total= total+busStops.element[0]-busStops.element[1]
+        total =total+(busStops[count][0]-busStops[count][1]);
+        count++;
+        
     });
     return total;
+    
   }
 
-  number()
