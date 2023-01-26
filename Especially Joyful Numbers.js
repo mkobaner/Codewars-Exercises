@@ -40,4 +40,9 @@ function numberJoy(n) {
 
 numberJoy(1729);
 
-
+// Solutions i like :
+// function numberJoy(n) {
+//     const x = String(n).split``.reduce((a,c) => a + +c, 0)
+//     const y = String(x).split``.reverse().join``
+//     return x * y === n
+//   }
