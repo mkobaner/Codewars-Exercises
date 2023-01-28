@@ -9,8 +9,10 @@ Examples: (Input --> output)
 3 --> 36 (sum of the cubes of 1, 2, and 3 is 1 + 8 + 27)*/
 
 function sumCubes(n){
+    let total=0;
     for(x=0; x<=n; x++)
     {
-        
+        total=total+x*x*x
     }
+    return total;
   }
