@@ -1,0 +1,5 @@
+* {background-color: aqua;
+    margin-top: 10px;}
+.player1,.player2{
+    display: flex;
+}
