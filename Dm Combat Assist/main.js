@@ -62,11 +62,12 @@ let totalEnemy=0;
 function addEnemy(){ 
     totalEnemy++;
     let divTag=`enemy${totalEnemy}`;
-    const addEnemyButton= document.createElement('button')
-    addEnemyButton.innerHTML='Roll';
-    addEnemyButton.classList.add(divTag);
-    document.querySelector(`.player${totalplayer}`).append(addEnemyButton);
 
+    const addRollButton= document.createElement('button')
+    addRollButton.innerHTML='Roll';
+    addRollButton.classList.add(divTag);
+    document.querySelector(`.player${totalplayer}`).append(addRollButton);
+    document.querySelector(`.${divTag}`).addEventListener('click', roll);
 
     const enemyName=prompt('Enter Enemy Name:');
     const enemyAtt=prompt('Enter Enemy Att:');
@@ -80,6 +81,7 @@ function addEnemy(){
 
 
 }
+
 
 
 
