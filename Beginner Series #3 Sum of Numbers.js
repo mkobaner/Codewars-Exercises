@@ -31,7 +31,7 @@ return total;
 }
 getSum(3,7);
 
-/* other solution
+/* other solutions that i like 
 const GetSum = (a, b) => {
   let min = Math.min(a, b),
       max = Math.max(a, b);
