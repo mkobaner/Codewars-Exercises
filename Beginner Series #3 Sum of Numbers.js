@@ -14,9 +14,26 @@ Your function should only return a number, not the explanation about how you get
 
 function getSum(a, b)
 { if(a===b){return a}
-
-
+let total=0;
+if(a<b){ 
+    for ( x=a; x<=b; x++){
+        total=total+x;
+       
+    }
+    
+} else  { 
+    for (x=b; x<=a; x++){
+        total=total+x;
+        
+    }
 }
+return total;
+}
+getSum(3,7);
 
-
-
+/* other solution
+const GetSum = (a, b) => {
+  let min = Math.min(a, b),
+      max = Math.max(a, b);
+  return (max - min + 1) * (min + max) / 2;
+}*/
