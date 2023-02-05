@@ -52,6 +52,14 @@ function a2Biggerthanb3 (a,b){
 }
 a2Biggerthanb3([1,2,3],[1,2]);
 
+//Leons solution 
+
+function compareSquareandCube(a,b){
+    return a.reduce((acc,c) => acc+c**2,0) >b.reduce((acc,c) => acc+c**3,0)
+}
+
+//reduce is much more graceful still  i like what i wrote.
+
 //Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
 // Some cases:
 // [22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
@@ -68,9 +76,12 @@ function retMultiple (arr){
     return newArray;
 }
 
-
 console.log(retMultiple([1,2,3,4,5,6,7,8]));
 
+//Leon's code - damn i wrote this with filter and than totally forgot i could use second parameter i  so i gave up and used for and if ...
+function isMultiple(arr){
+    return arr.filter((e,i) => e%i===0)
+}
 
 //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
 
@@ -82,3 +93,16 @@ function sumAll (arr){
     return total;
 }
 console.log(sumAll(['2',3,4,5,'11']));
+
+//
+
+//Leon's 2 solution first one uses regex with const faunction + makes a string to number
+
+const s= r => r.reduce((a,c) => +a+ +c);
+console.log(s([2,3,1,'5']));
+
+//second one is a more acceptable when working with other people, need to solve some codeward with reduce to fix it.
+
+function sumOfValues(arr){
+    return arr.reduce((acc,c)=> acc + Number(c),0);
+}
