@@ -14,10 +14,11 @@ A string consists of lowercase latin letters, digits and symbols.
 [output] a string*/
 
 function reverseLetter(str) {
-    let ans = str.replace(/[^a-zA-Z0-9]/g, '');
-    console.log(ans)
-    return ans.split('').reverse().join('');
+    
+    return str.replace(/[^a-zA-Z]/g,"").split('').reverse().join('');
     
   }
 
-  reverseLetter('ultr53o?n');
+ //the solution that i like 
+
+ reverseLetter=(s)=>s.replace(/[^a-z]/gi,'').split('').reverse().join('');
