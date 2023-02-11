@@ -13,5 +13,15 @@ Examples
 
 
 const prevMultOfThree = n => {
-    //your solution
+    if ( n%3===0){ return n} 
+    else if  (n) {
+      for (x=0; x<n.length; x++)
+      {
+        if (x.slice(0,-x)%3===0){
+          return x.slice(0,-x);
+        }
+      }
+    }
   }
+
+  prevMultOfThree(36);
