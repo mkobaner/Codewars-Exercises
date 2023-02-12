@@ -12,16 +12,39 @@ Examples
 952406 => 9*/
 
 
-const prevMultOfThree = n => {
-    if ( n%3===0){ return n} 
-    else if  (n) {
-      for (x=0; x<n.length; x++)
-      {
-        if (x.slice(0,-x)%3===0){
-          return x.slice(0,-x);
-        }
-      }
-    }
-  }
+// const prevMultOfThree = n => {
+//     if ( n%3===0){ return n} 
+//     else if  (n>=1) {
+//       for (x=0; x<n.length-1; x++)
+//       console.log(`${n} n budur`)
+//       n=String(n)
+//       {
+//         if (Number(n.slice(0,-x))%3===0){
+          
+//           console.log(`${Number(n.slice(0,-x))} 24 ran`);
+//           return n.slice(0,-x);
+//         }
+//       }
+//     }
+//   }
 
-  prevMultOfThree(36);
+//   prevMultOfThree(365);
+
+//Great Solutions
+
+const prevMultOfThree = n => {
+  if (n === 0) return null;
+  if (n%3 === 0) return n;
+  return prevMultOfThree(+n.toString().slice(0, -1))
+}
+
+const prevMultOfThree2 = n => {
+  while(n % 3 != 0) {
+    n = Math.floor(n/10);
+    if (n < 1) return null;
+  }
+  return n;
+}
+
+
+
