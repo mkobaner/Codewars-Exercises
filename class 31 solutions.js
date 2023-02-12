@@ -43,7 +43,7 @@ class Archer extends Char{
         }
     }
 
-
+//Added archer and attack method can be called for each class but does different things depending on class how cool is that :)
 
 let Konan = new Warrior('Konan',17,15,16,22,45)
 let Mahmut = new Warrior('Mahmut',22,22,16,22,85)
