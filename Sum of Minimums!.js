@@ -27,7 +27,7 @@ function sumOfMinimums(arr) {
             total=total+myLow;
             console.log(total);
     }
-    return total;
+    return total;  
    
   }
 
