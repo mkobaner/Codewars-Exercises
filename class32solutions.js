@@ -157,3 +157,57 @@ class Full extends Contractor{
     }}
 
 let Mahmut =new Full('Mahmut','Fullstack','MERN');
+
+
+
+class Human{
+    constructor (name,race){
+        this._name=name;
+        this._race=race;
+    }
+    get name(){
+        return this._name
+    }
+    get race(){
+        return this._race
+    }
+    sayHello(){
+        console.log(`Hello This is ${this._name} and i am a ${this._race}`)
+    }
+
+}
+
+class Man extends Human{
+    constructor(name, race,sex){
+        super(name,race)
+        this._sex=sex
+    }
+    get sex(){
+        return this._sex;
+    }
+    sayHello(){
+        console.log(`Hello This is ${this._name} and i am a ${this._race} and a ${this._sex} ie`)
+    }
+
+}
+
+class Woman extends Human{
+    constructor(name,race,sex){
+        super(name,race)
+        this._sex=sex
+    }
+    get sex(){
+        return this._sex;
+    }
+    sayHello(){
+        console.log(`Hello This is ${this._name} and i am a ${this._race} and a ${this._sex} `)
+    }
+}
+
+
+let Robert= new Man('Mahmut','Caucasion','Male');
+let Lisa=new Woman('Lisa','Scandinavian','Woman');
+let people=[Robert,Lisa];
+for (one of people){
+    one.sayHello()
+}
