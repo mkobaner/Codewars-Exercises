@@ -142,3 +142,18 @@ let agency = [bob,simba,machi]
 for(person of agency){
     person.sayHello()
 }
+
+class Full extends Contractor{
+    constructor(name,role,tech){
+        super(name,role)
+        this._tech = tech
+    }
+    get tech(){
+        return this._tech
+    }
+    sayHello(){
+        console.log(`Hello, I am on the ${this._role} team at #100Devs and I use ${this._tech}`)
+
+    }}
+
+let Mahmut =new Full('Mahmut','Fullstack','MERN');
