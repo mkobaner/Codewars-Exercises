@@ -9,5 +9,5 @@ function find(a, e) {
 
 
 const find = (a, x) => (x = a.indexOf(x)) < 0 ? 'Not found' : x
-
-var find = (a, e) => a.includes(e) ? a.indexOf(e) : "Not found";
+// those are gems include with itinery that rocks!!
+let find = (a, e) => a.includes(e) ? a.indexOf(e) : "Not found";
