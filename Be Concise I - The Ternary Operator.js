@@ -38,3 +38,6 @@ function describeAge(a) {
   function describeAge(age) {
     return "You're a(n) " + (age < 13 ? "kid" : age < 18 ? "teenager" : age < 65 ? "adult" : "elderly")
   }
+
+  const describeAge = age =>
+  `You're a(n) ${age > 64 ? `elderly` : age > 17 ? `adult` : age > 12 ? `teenager` : `kid`}`;
