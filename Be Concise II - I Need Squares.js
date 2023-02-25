@@ -8,9 +8,12 @@ Don't you think the array parameter is a bit wordy? ;)
 Good luck! :D*/
 
 function squaresOnly(array) {
-    return array.filter(n=>(Math.sqrt(n)).isInteger)
+    return array.filter(n=>((Math.sqrt(n)%1)===0))
   }
 
-// return array.filter(n=>(Math.sqrt(n)).isInteger)
 
-squaresOnly([0,1,2,3,4,5,6,7,8,9,10]);
+// or this altough my soluton is better
+return array.filter(n => Number.isInteger(Math.sqrt(n)));
+
+//this is shorter i wonder which is faster
+return a.filter(x => x ** 0.5 % 1 == 0);
