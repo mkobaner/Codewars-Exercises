@@ -8,19 +8,9 @@ Don't you think the array parameter is a bit wordy? ;)
 Good luck! :D*/
 
 function squaresOnly(array) {
-    var result = [], isSquare;
-    for (let i = 0; i < array.length; i++) {
-      isSquare = !1; // !1 evaluates to false and is therefore a shorthand way of typing 'false'
-      for (let k = 0; k <= 10; k++) {
-        if (k ** 2 === array[i]) {
-          isSquare = true;
-        }
-      }
-      if (isSquare) {
-        result[result.length] = array[i];
-      }
-    }
-    return result;
+    return array.filter(n=>(Math.sqrt(n)).isInteger)
   }
 
-array.filter(n=>(Math.sqrt(n)))
+// return array.filter(n=>(Math.sqrt(n)).isInteger)
+
+squaresOnly([0,1,2,3,4,5,6,7,8,9,10]);
