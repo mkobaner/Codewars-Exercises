@@ -20,3 +20,12 @@ class Cat extends Animal {
 //       return `${this.name} meows.`;
 //     }
 //   }
+
+class Cat extends Animal {
+    constructor(kedigucu){
+        super(kedigucu);
+    }
+    speak(){
+        return this.kedigucu;
+    }
+}
