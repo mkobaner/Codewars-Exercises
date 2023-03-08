@@ -15,7 +15,7 @@ let aliasGen=(a,b)=>{
 let fName1 =a.charAt(0).toUpperCase();
 
 let fName2 =b.charAt(0).toUpperCase();
-console.log(fName1+fName2);
+// console.log(fName1+fName2);
 return !/^[a-zA-Z]$/.test(fName1)||!/^[a-zA-Z]$/.test(fName2)? 'Your name must start with a letter from A - Z.': `${firstName[fName1]} ${surname[fName2]}`;
 
 } 
@@ -23,3 +23,14 @@ return !/^[a-zA-Z]$/.test(fName1)||!/^[a-zA-Z]$/.test(fName2)? 'Your name must s
 
 
 aliasGen('charlie','bravo');
+
+//this one is using oop and clearly more dry
+
+const initialCap = (str) => str[0].toUpperCase();
+const isValidName = (name) => /^[a-z]/i.test(name);
+const aliasGen = (fName, lName) => {
+  return (isValidName(fName) && isValidName(lName))
+    ? `${ firstName[initialCap(fName)] } ${ surname[initialCap(lName)] }`
+    : 'Your name must start with a letter from A - Z.';
+}
+
