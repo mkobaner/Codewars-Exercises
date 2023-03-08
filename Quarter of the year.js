@@ -7,3 +7,5 @@ Constraint:
 1 <= month <= 12 */
 
 const quarterOf = (m) => m<4 ? 1 :m<7?2: m<10? 3: 4; 
+
+//const quarterOf = m => Math.ceil(m/3);
