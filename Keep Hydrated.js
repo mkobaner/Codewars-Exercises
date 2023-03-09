@@ -15,4 +15,4 @@ time = 11.8--> litres = 5*/
 
 let litres=t=> Math.floor((t*0.5));
 
-
+//litres = t => ~~(t / 2);   now this means ~~ Math.floor interesting 
