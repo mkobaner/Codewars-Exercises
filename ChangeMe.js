@@ -9,5 +9,8 @@ This change machine is programmed to accept and distribute strings rather than n
 
 changeMe = m=>m=='£5'?'20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p':m=='£2'?'20p 20p 20p 20p 20p 20p 20p 20p 20p 20p':m=='£1'?'20p 20p 20p 20p 20p':m=='50p'?'20p 20p 10p':m=='20p'?'10p 10p':m;
 
-console.log(changeMe('1324123'))
+console.log(changeMe('£5'))
 
+//Changing hardcoded to logic for long 20p
+
+changeMe = m=>m=='£5'?Array(25).fill('20p').join(' '):m=='£2'?Array(10).fill('20p').join(' '):m=='£1'?Array(5).fill('20p').join(' '):m=='50p'?'20p 20p 10p':m=='20p'?'10p 10p':m;
