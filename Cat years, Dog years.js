@@ -25,8 +25,3 @@ c=h==1?15:h==2?24:24+((h-2)*4);
 d=h==1?15:h==2?24:24+((h-2)*5);
 return [h,c,d]
 }
-
-var humanYearsCatYearsDogYears = function(humanYears) {
-    // Your code here!
-    return [0,0,0];
-  }
