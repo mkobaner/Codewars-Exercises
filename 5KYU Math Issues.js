@@ -20,3 +20,18 @@ Math.round = function(number) {
   };
 
 
+  // parseint  can be used as well
+
+  Math.round = function(n)
+{ return parseInt(n+0.5); };
+
+Math.ceil = function(n)
+{ return n==parseInt(n) ? this.round(n) : parseInt(n)+1; };
+
+Math.floor = function(n)
+{ return parseInt(n); };
+
+// >> << shift right shift left very interesting solution
+Math.round = (n) => n + 0.5 >> 0;
+Math.ceil = (n) => Number.isInteger(n) ? n : n + 1 << 0;
+Math.floor = (n) => n >> 0;
