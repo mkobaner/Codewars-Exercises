@@ -4,17 +4,16 @@
   "description": "gettingintouchwithinnerserver :)\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D \u001b[C\u001b[D\u001b[Di\u001b[F",
   "main": "\u001b[D\u001b[C\u001b[Dto\u001b[D\u001b[D\u001b[A\u001b[B\u001b[F\u001b[B\u001b[B",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
   "author": "MRK",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongodb": "^5.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.21"
-  },
-  "scripts": {
-    "dev": "nodemon server.js"
   }
 }
