@@ -7,6 +7,8 @@ app.set('view engine', 'ejs');
 
 //parser first , before crud handlers
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+app.use(express.static('public'));
 
 //handlers here
 app.listen(3000,function(){
@@ -41,5 +43,24 @@ MongoClient.connect('mongodb+srv://mkobaner1:akacaz@napoleon.d1ctoti.mongodb.net
         .catch(/* ... */)
     })
 
+    app.put('/quotes', (req, res) => {
+      console.log(req.body)
+    })
+
+    quotesCollection.findOneAndUpdate(
+      { name: 'Yoda' },
+      {
+        $set: {
+          name: req.body.name,
+          quote: req.body.quote
+        }
+      },
+      {
+        upsert: true
+      }
+    )
+      .then(result => {/* ... */})
+      .catch(error => console.error(error))
+      
   })
   .catch(console.error)
