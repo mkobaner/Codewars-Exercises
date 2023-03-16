@@ -4,6 +4,7 @@ const MongoClient =require('mongodb').MongoClient;
 const app=express();
 
 app.set('view engine', 'ejs');
+
 //parser first , before crud handlers
 app.use(bodyParser.urlencoded({extended:true}));
 
@@ -12,9 +13,7 @@ app.listen(3000,function(){
     console.log('listening on 3000')
 })
 
-app.get('/', function(req,res){
-    res.sendFile(__dirname+'/index.html')
-})
+
 
 
 
@@ -37,10 +36,9 @@ MongoClient.connect('mongodb+srv://mkobaner1:akacaz@napoleon.d1ctoti.mongodb.net
     app.get('/', (req, res) => {
       db.collection('quotes').find().toArray()
         .then(results => {
-          console.log(results)
+          res.render('index.ejs', { quotes: results })
         })
-        .catch(error => console.error(error))
-      // ...
+        .catch(/* ... */)
     })
 
   })
