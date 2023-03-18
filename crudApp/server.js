@@ -47,20 +47,6 @@ MongoClient.connect('mongodb+srv://mkobaner1:akacaz@napoleon.d1ctoti.mongodb.net
       console.log(req.body)
     })
 
-    quotesCollection.findOneAndUpdate(
-      { name: 'Yoda' },
-      {
-        $set: {
-          name: req.body.name,
-          quote: req.body.quote
-        }
-      },
-      {
-        upsert: true
-      }
-    )
-      .then(result => {/* ... */})
-      .catch(error => console.error(error))
-      
+    
   })
   .catch(console.error)

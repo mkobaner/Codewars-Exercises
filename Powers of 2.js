@@ -7,4 +7,22 @@ n = 0  ==> [1]        # [2^0]
 n = 1  ==> [1, 2]     # [2^0, 2^1]
 n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2] */
 
-powersOfTwo=n=> n.map
+powersOfTwo=n=>{
+let arr=[];
+for ( x=0; x<=n;x++){
+    arr.push(2**x);
+}
+return arr;
+}
+
+powersOfTwo(5);
+
+powersOfTwo=n=>{
+    let arr = [];
+  for (let x = 0; x <= n; x++) {
+    arr.push(2 ** x);
+  }
+  return arr;
+    }
+    
+    powersOfTwo(5);

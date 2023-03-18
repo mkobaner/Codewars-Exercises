@@ -27,5 +27,5 @@ function mkm(numbers){
 }
 //syntax of reduce needs some adjustment still!!!
 function MahmutX(numbers){
-    return numbers.redıce((sum,num)=> sum*sum-num +num+1)
+    return numbers.reduce((sum,num)=> sum*sum-num +num+1)
 }

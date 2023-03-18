@@ -1,0 +1,1 @@
+/*Numbers that are a power of their sum of digits 
