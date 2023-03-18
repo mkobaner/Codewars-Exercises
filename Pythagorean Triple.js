@@ -27,3 +27,11 @@ isPythagoreanTriple=int=>{
 }
 
 isPythagoreanTriple([2,3,4])
+
+//with sort method - my method should be more cost efficient tough.
+
+function isPythagoreanTriple(nums) {
+    const [a,b,c] = nums.sort((a,b) => a - b)
+  
+    return a**2 + b**2 === c**2
+  }
