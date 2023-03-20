@@ -7,4 +7,4 @@ Write a function calculating distance between Point a and Point b.
 
 Tests compare expected result and actual answer with tolerance of 1e-6.*/
 
-distanceBetweenPoints=(a, b)=> Math.sqrt(a['x']-b['x']**2+a['y']-b['y']**2)
+distanceBetweenPoints=(a, b)=> Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
