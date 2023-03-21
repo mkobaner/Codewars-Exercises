@@ -13,3 +13,14 @@ cycleLength - Integer representing the length of the cycle in days
 Return true if the number of days passed from last to today is greater than cycleLength. Otherwise, return false.*/
 
 periodIsLate=(last,today,cycleLength)=>(today.getTime() - last.getTime()) / (1000 * 60 * 60 * 24) > cycleLength;
+
+// another solution
+
+function periodIsLate(last, today, cycleLength)
+{
+  return (today-last)/86400000>cycleLength
+}
+
+//change it to my style
+
+periodIsLate=(last,today,cycleLength)=>(today- last)/(1000 * 60 * 60 * 24) > cycleLength;
