@@ -28,6 +28,9 @@ If you want to solve our problems, they are here: From Singularity Hub Community
 realNumbers=n=>{
     let count=0
     for(x=1;x<=n;x++){
-        
+        !(x%2==0||x%5==0||x%3==0)?count++:''
     }
+    return count
 }
+//works but inefficient
+
