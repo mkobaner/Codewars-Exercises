@@ -34,3 +34,13 @@ realNumbers=n=>{
 }
 //works but inefficient
 
+realNumbers=n=>{
+    mF=d=>Math.floor(n/d);
+    return n-mF(2)-mF(3)-mF(5)+mF(6)+mF(10)+mF(15)-mF(30)
+}
+
+
+// ~~ this is Math.floor :9 how cool is that :) 
+function realNumbers(n) {
+    return n - ~~(n/2) - ~~(n/3) - ~~(n/5) + ~~(n/6) + ~~(n/10) + ~~(n/15) - ~~(n/30);
+  }
