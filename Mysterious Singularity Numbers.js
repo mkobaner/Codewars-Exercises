@@ -38,7 +38,7 @@ realNumbers=n=>{
     mF=d=>Math.floor(n/d);
     return n-mF(2)-mF(3)-mF(5)+mF(6)+mF(10)+mF(15)-mF(30)
 }
-
+// works efficiently i subtract  divisble by 2,3,5 and than add 10 15 30 since those are substracvted twice and than remove 30 since this also added twice by 15 and 10 
 
 // ~~ this is Math.floor :9 how cool is that :) 
 function realNumbers(n) {
