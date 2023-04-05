@@ -14,3 +14,5 @@ text before = "abc"
 character   = "z"
 text after  = "zzz"
 STRINGSFUNDAMENTALS */
+
+contamination=(a,b)=b.repeat(a.length)
