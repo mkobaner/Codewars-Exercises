@@ -25,4 +25,6 @@ String.prototype.toAlternatingCase = function () {
   }
 
   // much more tidier  ternaries can definitely should be used
-  
+  String.prototype.toAlternatingCase = function () {
+    return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
+}
