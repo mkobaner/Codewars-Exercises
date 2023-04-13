@@ -24,4 +24,6 @@ output:
         return result;
     }
 
-    
+    //ok so easier way isto use  join method like this
+
+    toCsvText=x=>x.join('\n')
