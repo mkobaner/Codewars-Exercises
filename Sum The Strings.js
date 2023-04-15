@@ -28,3 +28,10 @@ sumStr=(a,b)=>{
 
 }
 
+//well Number and String method could be simpler :) **
+sumStr=(a,b)=>String(Number(a)+Number(b));
+
+//this one is interesting thats another way for String and Number
+
+sumStr=(a,b)=>(+a+ +b)+''
+
