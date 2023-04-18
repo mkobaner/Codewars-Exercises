@@ -49,17 +49,28 @@ function sortEmotions(arr, order){
       // console.log(superHappyCount,happyCount,normalCount,sadCount,superSadCount,order) 
 
     if (order==true) 
-    
-    {let result= [':D'.repeat(superHappyCount), ':)'.repeat(happyCount),':|'.repeat(normalCount),':('.repeat(sadCount),'T_T'.repeat(superSadCount)];
+    {
+    let result = [
+        ...Array(superHappyCount).fill(':D').map(e => e + ','),
+        ...Array(happyCount).fill(':)').map(e => e + ','),
+        ...Array(normalCount).fill(':|').map(e => e + ','),
+        ...Array(sadCount).fill(':(').map(e => e + ','),
+        ...Array(superSadCount).fill('T_T').map(e => e + ',')
+      ];
+      return result.slice(0, -1); // Remove the trailing comma from the last emoticon
+    }
 
-    return result.filter((item)=>item !=='');
-
-}
-    
-    else 
-    {let result= ['T_T'.repeat(superSadCount),':('.repeat(sadCount),':|'.repeat(normalCount),':)'.repeat(happyCount),':D'.repeat(superHappyCount)]
-    return result.filter((item)=>item !==''); 
-}
+ 
+    else {
+    let result = [
+        ...Array(superSadCount).fill('T_T').map(e => e + ','),
+        ...Array(sadCount).fill(':(').map(e => e + ','),
+        ...Array(normalCount).fill(':|').map(e => e + ','),
+        ...Array(happyCount).fill(':)').map(e => e + ','),
+        ...Array(superHappyCount).fill(':D').map(e => e + ',')
+      ];
+      return result.slice(0, -1); // Remove the trailing comma from the last emoticon
+    }
 
   }
 
