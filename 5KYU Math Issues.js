@@ -21,7 +21,6 @@ Math.round = function(number) {
 
 
   // parseint  can be used as well
-
   Math.round = function(n)
 { return parseInt(n+0.5); };
 
@@ -35,3 +34,4 @@ Math.floor = function(n)
 Math.round = (n) => n + 0.5 >> 0;
 Math.ceil = (n) => Number.isInteger(n) ? n : n + 1 << 0;
 Math.floor = (n) => n >> 0;
+
