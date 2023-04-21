@@ -73,5 +73,4 @@ function sortEmotions(arr, order){
     }
 
   }
-
 //  sortEmotions(([ ':D', 'T_T', ':D', ':(' ], false));
