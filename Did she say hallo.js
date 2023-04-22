@@ -49,5 +49,16 @@ function validateHello(input) {
 
   //works but lets do it without regex
 
-  
+  function validateHello(input) {
+    const greetings = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc'];
+    const inputWords = input.toLowerCase().split(' ');
+    for (let i = 0; i < inputWords.length; i++) {
+      if (greetings.includes(inputWords[i])) {
+        return true;
+      }
+    }
+    return false;
+  }
 
+
+  //doesnt pass the test without regex if becomes far too complex...
