@@ -32,6 +32,8 @@ validateHello=g=>{
       }
 }
 
+//switch still feels off
+
 
 // tests wants to check for strings that contains the keywords
 
