@@ -26,4 +26,8 @@ shortenToDate=longDate=>{
 
 shortenToDate("Friday May 2, 9am");
 
-//
+// well given the context this is a simpler solution.
+
+function shortenToDate(longDate) {
+  return longDate.split(",")[0];
+}
