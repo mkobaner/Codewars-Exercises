@@ -36,3 +36,5 @@ function shortenToDate(longDate) {
 //One line it 
 
 const shortenToDate = longDate => longDate.split(",")[0];
+
+
