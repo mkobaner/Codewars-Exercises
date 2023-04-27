@@ -7,6 +7,8 @@ Example:
 None of the arrays will be empty, so you don't have to worry about that! */
 
 let removeEveryOther = arr=>{
-     arr.map((cur, index) => index!==0&&index%2==0?  arr.splice(index,1):'');
+     arr.map((cur, index) => index!==0&&index%2!==0?  arr.splice(index,1):'');
     return arr;
     };
+
+removeEveryOther(['Hello', 'Goodbye', 'Hello Again']);
