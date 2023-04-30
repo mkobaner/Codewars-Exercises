@@ -46,7 +46,7 @@ lithuanian: 'Laukiamas',
 polish: 'Witamy',
 spanish: 'Bienvenido',
 swedish: 'Valkommen',
-welsh: 'Croeso'
+welsh: 'Croeso',
     }
 return languages[language.toLowerCase()]|| languages.english;
 
