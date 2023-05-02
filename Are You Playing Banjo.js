@@ -11,3 +11,5 @@ let areYouPlayingBanjo= n=> n[0].toLowerCase()=='r'?`${n} plays banjo`:`${n} doe
 
 areYouPlayingBanjo('Rick');
 areYouPlayingBanjo('Mahmut');
+
+//mental note camelCase doesnt end after second word...
